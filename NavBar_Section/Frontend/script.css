@@ -293,3 +293,33 @@ li{
     margin-top:20px;
     color:white;
 }
+
+/* Biometric Content Layout */
+
+.biometric-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+}
+
+.biometric-left{
+    flex:1;
+}
+
+/* Face Scan */
+
+.face-scan {
+    font-size: 80px;
+    color: cyan;
+    animation: scan 2s infinite;
+    text-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan;
+}
+
+@keyframes scan {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
